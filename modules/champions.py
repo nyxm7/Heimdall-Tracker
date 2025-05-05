@@ -1,1 +1,9 @@
-
+Class_champion:
+Name
+Wins
+Losses
+Damage_dealt
+damage_taken
+Pickrate
+Random_Variables
+games_analysed
