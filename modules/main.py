@@ -1,5 +1,5 @@
 import requests
-riot_api = "RGAPI-f32242ab-e85b-4769-957c-6ca66c66b04a"
+from api import riot_api
 start_acc_data = "https://americas.api.riotgames.com/riot/account/v1/accounts/by-riot-id/"
 on = True
 while on:
