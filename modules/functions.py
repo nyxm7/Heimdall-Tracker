@@ -12,29 +12,24 @@ def get_player_id(username, tag):
     response = requests.get(acc_data)
     if response.status_code == 200:
         pass
+    elif response.status_code == 429:
+        print("Error fetching match details: Rate limit exceeded")
     else:
         print("Error fetching match details:", response.status_code)
         return 0
     account = response.json()
     player_id = account['puuid']
     return player_id
-def get_matches(matches, api_key, counter): #Returns match data as a dictionary
+def get_matches(matches, api_key): #Returns match data as a dictionary
     match_api = "https://americas.api.riotgames.com/lol/match/v5/matches/"
-    match_request = match_api + matches[counter] + '?api_key=' + api_key
+    match_request = match_api + matches + '?api_key=' + api_key
     response = requests.get(match_request)
     if response.status_code == 200:
         return response.json()  # Returns match data
     else:
         print("Error fetching match details:", response.status_code)
         return None
-def match_validation(match_list):
-    val_list = []
-    for index, m_id in enumerate(match_list):
-        if id in analyzed_matches:
-            val_list.append(False)
-        elif id not in analyzed_matches:
-            analyzed_matches.add(match_list[index])
-            val_list.append(True)
-    return val_list
-#def add_match_to_db():
-    #match_list = get_matches_list()
+def player_input():
+    riot_name = input("Please type your riot username: ")
+    riot_tag = input("Please type your riot tag: ")
+    return riot_name, riot_tag
