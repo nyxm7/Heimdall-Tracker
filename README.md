@@ -21,7 +21,7 @@
 ### Quick Start:   
  *Clone the Repository*
 ```diff
- git clone https://github.com/yourusername/heimdall-tracker.git
+ git clone https://github.com/nyxm7/Heimdall-Tracker.git
  cd Heimdall-Tracker
 ```
 ### Configure Database Connection:
