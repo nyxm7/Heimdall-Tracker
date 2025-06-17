@@ -22,7 +22,7 @@
  *Clone the Repository*
 ```diff
  git clone https://github.com/yourusername/heimdall-tracker.git
- cd heimdall-tracker.
+ cd Heimdall-Tracker
 ```
 ### Configure Database Connection:
 ```diff
