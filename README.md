@@ -12,7 +12,7 @@
  ✔ **Python Backend:** API calls, data processing and analysis via the utilization of the Web method.  
 
 ### **Why "Heimdall"?**
-*In Norse mythology, Heimdall is the all-seeing guardian. Like its namesake, this tracker watches over your League data to reveal hidden patterns.*
+*In Norse mythology, Heimdall is the all-seeing guardian. Like its namesake, this tracker watches over your League data.*
 
 ### Prerequisites:
    *PostgreSQL (v12+)*   
