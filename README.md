@@ -25,6 +25,7 @@
  cd Heimdall-Tracker
 ```
 ### Configure Database Connection:
+ *Go to the database.py file and change the following details: *
 ```diff
 def get_db_connection():
         conn = psycopg.connect(
